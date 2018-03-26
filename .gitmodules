@@ -1,3 +1,6 @@
 [submodule "Juridico_front"]
 	path = Juridico_front
 	url = git@github.com:midemarc/Juridico_front.git
+[submodule "Juridico_back"]
+	path = Juridico_back
+	url = git@github.com:midemarc/Juridico.git
