@@ -3,7 +3,8 @@ version: '3'
 services:
   backend:
     restart: always
-    build: ./Juridico_back
+    #build: ./Juridico_back
+    image: juridico_back:latest
     ports:
       - 8000:8000
     container_name: juridico_back
@@ -12,7 +13,8 @@ services:
 
   frontend:
     restart: always
-    build: ./Juridico_front
+    #build: ./Juridico_front
+    image: juridico_front:latest
     ports:      
       - 4200:80
     links:
