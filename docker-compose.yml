@@ -14,7 +14,7 @@ services:
   frontend:
     restart: always
     #build: ./Juridico_front
-    image: juridico_front:latest
+    image: midemarc/juridico_front:latest
     ports:      
       - 4200:80
     links:
