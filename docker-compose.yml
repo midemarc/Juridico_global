@@ -2,21 +2,15 @@ version: '3'
 
 services:
   backend:
-    restart: always
-    #build: ./Juridico_back
+    restart: unless-stopped
     image: juridico_back:latest
     ports:
       - 8000:8000
     container_name: juridico_back
-    environment:
-      REDIS_HOST: 'cache'
 
   frontend:
-    restart: always
-    #build: ./Juridico_front
+    restart: unless-stopped
     image: midemarc/juridico_front:latest
     ports:      
       - 4200:80
-    links:
-      - backend
     container_name: juridico_front
