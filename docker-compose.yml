@@ -4,6 +4,8 @@ services:
   backend:
     restart: unless-stopped
     image: juridico_back:latest
+    volumes:
+      - "./Juridico_back/juridico_site/db/:/backend/juridico_site/db/"
     ports:
       - 8000:8000
     container_name: juridico_back
